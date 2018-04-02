@@ -1,0 +1,57 @@
+body {
+  margin: auto;
+}
+
+#header-img {
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h2 {
+  /* position: relative;
+  top: 50px;
+  left: 50px; */
+}
+
+#gif-buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  margin-top: 40px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.link {
+  /* margin: 10px;
+  position: absolute; */
+}
+
+.pin {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  margin-right: 50px;
+  /* top: 100px;
+  width: 100px; */
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
