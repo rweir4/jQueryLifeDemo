@@ -1,5 +1,16 @@
-//if you click on a button, have a list of buttons pop up that you might like... do this for a couple times
-//then have it suggest another character
+//have a button to make the image larger or smaller or normal with remove and add class
 
-//each button will do a hide and show and ajax... and then i need something that has event listeners turn on or off.
-//maybe click a button to pin the associated button, and that turns off the ajax button
+$l(playDemo);
+
+function playDemo() {
+  const button = $l('button');
+  button.on("click", e => {
+    $l.ajax({
+      url:
+      `https://api.giphy.com/v1/gifs/random?tag=parks+and+rec&api_key=L2yCnV4B058nsp7fHBXAtCUhXKIa6A8v&limit=1`,
+      success(img) {
+        $l('section').find('img').attr('src', `${JSON.parse(img).data.url}`);
+      }
+    });
+  });
+}
