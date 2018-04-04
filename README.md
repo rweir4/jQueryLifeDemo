@@ -12,11 +12,6 @@
 
   ```
   const generate = $l('.generate');
-  const image = $l('.image-to-be-gen');
-
-  const small = $l('.small');
-  const normal = $l('.normal');
-  const large = $l('.large');
   ```
 
 <h3>AJAX Request:</h3>
