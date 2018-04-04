@@ -7,9 +7,10 @@ function playDemo() {
   button.on("click", e => {
     $l.ajax({
       url:
-      `https://api.giphy.com/v1/gifs/random?tag=parks+and+rec&api_key=L2yCnV4B058nsp7fHBXAtCUhXKIa6A8v&limit=1`,
+      `https://api.giphy.com/v1/gifs/random?tag=parks+and+rec&api_key=L2yCnV4B058nsp7fHBXAtCUhXKIa6A8v&rating=G`,
       success(img) {
-        $l('section').find('img').attr('src', `${JSON.parse(img).data.url}`);
+        const image = $l('section').find('img');
+        image.attr('src', `${JSON.parse(img).data.images.downsized_large.url}`);
       }
     });
   });

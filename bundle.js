@@ -78,7 +78,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("//have a button to make the image larger or smaller or normal with remove and add class\n\n$l(playDemo);\n\nfunction playDemo() {\n  const button = $l('button');\n  button.on(\"click\", e => {\n    $l.ajax({\n      url: `https://api.giphy.com/v1/gifs/random?tag=parks+and+rec&api_key=L2yCnV4B058nsp7fHBXAtCUhXKIa6A8v&limit=1`,\n      success(img) {\n        $l('section').find('img').attr('src', `${JSON.parse(img).data.url}`);\n      }\n    });\n  });\n}\n\n//# sourceURL=webpack:///./main.js?");
+eval("//have a button to make the image larger or smaller or normal with remove and add class\n\n$l(playDemo);\n\nfunction playDemo() {\n  const button = $l('button');\n  button.on(\"click\", e => {\n    $l.ajax({\n      url: `https://api.giphy.com/v1/gifs/random?tag=parks+and+rec&api_key=L2yCnV4B058nsp7fHBXAtCUhXKIa6A8v&rating=G`,\n      success(img) {\n        const image = $l('section').find('img');\n        image.attr('src', `${JSON.parse(img).data.images.downsized_large.url}`);\n      }\n    });\n  });\n}\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ })
 

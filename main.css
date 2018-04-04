@@ -51,21 +51,6 @@ button:active {
   transform: translate(2px, 2px);
 }
 
-.pin {
-  position: relative;
-  display: inline-block;
-  height: 40px;
-  margin-right: 50px;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
 footer {
   position: fixed;
   top: 700px;
